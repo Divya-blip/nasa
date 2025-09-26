@@ -1,0 +1,21 @@
+-BEGIN HEADER-
+NASA/POWER Source Native Resolution Daily Data 
+Dates (month/day/year): 09/08/2016 through 09/14/2016 in LST
+Location: latitude  35.6762   longitude 139.6503 
+elevation from MERRA-2: Average for 0.5 x 0.625 degree lat/lon region = 232.92 meters
+The value for missing source data that cannot be computed or is outside of the sources availability range: -999 
+parameter(s): 
+PRECTOTCORR     MERRA-2 Precipitation Corrected (mm/day) 
+RH2M            MERRA-2 Relative Humidity at 2 Meters (%) 
+T2M_MAX         MERRA-2 Temperature at 2 Meters Maximum (C) 
+T2M_MIN         MERRA-2 Temperature at 2 Meters Minimum (C) 
+WS10M           MERRA-2 Wind Speed at 10 Meters (m/s) 
+-END HEADER-
+YEAR,DOY,PRECTOTCORR,RH2M,T2M_MAX,T2M_MIN,WS10M
+2016,252,18.09,93.0,26.9,23.46,3.91
+2016,253,0.33,78.02,29.19,20.44,2.27
+2016,254,0.1,83.81,27.95,20.04,2.94
+2016,255,14.65,90.2,26.16,20.3,2.77
+2016,256,2.45,87.8,26.99,19.49,3.26
+2016,257,42.61,96.09,25.49,21.17,2.53
+2016,258,8.45,93.47,23.62,20.46,2.42
