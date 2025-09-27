@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Probability Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Add Leaflet Control Geocoder for country search and labels -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+    <h1>Personalized Weather Query Dashboard</h1>
+    <div id="map" style="height: 400px;"></div>
+    <form id="query-form">
+        <label for="month">Month:</label>
+        <select id="month" required>
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <label for="day">Day:</label>
+        <select id="day" required>
+            <option value="">Select Day</option>
+            <!-- Days will be populated based on month -->
+        </select>
+        <label>Conditions:</label>
+        <select id="conditions" multiple>
+            <option value="very_hot">Very Hot (>90°F)</option>
+            <option value="very_cold">Very Cold (<32°F)</option>
+            <option value="very_windy">Very Windy (>20 mph)</option>
+            <option value="very_wet">Very Wet (>0.5 in)</option>
+        </select>
+        <button type="button" id="select-all">Select All Conditions</button>
+        <button type="submit">Query</button>
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
